@@ -24,4 +24,6 @@ app1.get("/password",(req,res)=>{
     res.render("password")
 })
 
-app1.listen(3000)
+app1.listen(process.env.PORT || 3000, () => {
+    console.log('backend running')
+})
