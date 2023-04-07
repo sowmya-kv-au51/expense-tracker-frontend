@@ -55,7 +55,7 @@
       const password = document.getElementById('password').value;
       
       const body = JSON.stringify({email, password})
-      const data = await callApi('http://localhost:5001/users/login', 'POST', body)
+      const data = await callApi('https://expense-tracker-backend-production-f28d.up.railway.app/users/login', 'POST', body)
       if(data)
      
       document.getElementById('email').value=''
