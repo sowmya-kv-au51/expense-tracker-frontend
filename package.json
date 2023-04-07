@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node index.js --production"
+    "build": "NODE_ENV=production node index.js"
   },
   "keywords": [],
   "author": "",
