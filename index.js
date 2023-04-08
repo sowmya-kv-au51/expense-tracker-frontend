@@ -5,10 +5,6 @@ app1.set("view engine","ejs");
 app1.use( express.static( "public" ) );
 app1.use(express.static(__dirname + '/public'));
 
-app1.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", "*")
-}) 
-
 app1.get("/",(req,res)=>{
     res.render("home")
 })
