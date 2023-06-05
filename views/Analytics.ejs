@@ -89,11 +89,11 @@
                 });
             }
             async function getData(){
-                const data = await callApi('https://expense-tracker-backend-production-f28d.up.railway.app/users/analytics', "GET")
+                const data = await callApi('https://expense-tracker-backend-6gsr.onrender.com/users/analytics', "GET")
             }
             async function getFilteredData(){
                 let filterMonth = document.getElementById("filterMonth").value
-                const data = await callApi(`https://expense-tracker-backend-production-f28d.up.railway.app/users/filteredAnalytics?month=${filterMonth}`, "GET")
+                const data = await callApi(`https://expense-tracker-backend-6gsr.onrender.com/users/filteredAnalytics?month=${filterMonth}`, "GET")
             }
             function chart1(data) {
                 let filterMonth = document.getElementById("filterMonth").value
